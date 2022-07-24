@@ -1,5 +1,5 @@
 tellraw @a "\n------------------------------------\n"
-tellraw @a [{"translate":"我々式マイクラ人狼 made by %s","with":[{"text":"Soukun_Palpunte","color":"gold","bold":false}]}]
+tellraw @a [{"translate":"我々式マイクラ人狼(パン屋以降) made by %s","with":[{"text":"Soukun_Palpunte","color":"gold","bold":false}]}]
 tellraw @a [{"translate":"Edit by %s","with":[{"text":"Kuranosuke__","color":"yellow","bold":false}]}]
 tellraw @a [{"translate":"\n開始コマンド   %s","with": [{"text":"/function #wmw_after:start","color": "light_purple","clickEvent": {"action": "suggest_command","value": "/function #wmw_after:start"},"hoverEvent": {"action": "show_text","value": "クリックしてチャット欄に貼り付ける"}}]}]
 tellraw @a [{"translate":"\n終了コマンド   %s","with": [{"text":"/function #wmw_after:stop","color": "light_purple","clickEvent": {"action": "suggest_command","value": "/function #wmw_after:stop"},"hoverEvent": {"action": "show_text","value": "クリックしてチャット欄に貼り付ける"}}]}]
