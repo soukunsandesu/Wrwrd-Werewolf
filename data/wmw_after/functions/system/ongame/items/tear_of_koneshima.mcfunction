@@ -1,3 +1,5 @@
+#> wmw_after:system/ongame/items/tear_of_koneshima
+
 execute if entity @a[scores={TearOfKonesihma=1..}] if entity @e[type=item,nbt={Item:{id:"minecraft:ghast_tear",Count:1b,tag:{CustomModelData:18}}}] at @a[scores={TearOfKonesihma=0,DeathCount=0}] if block ~ ~ ~ air run summon armor_stand ~ ~3 ~ {Invisible:1,Marker:1,Tags:["WMWAfterstand","TearOfKonesihma"]}
 execute if entity @a[scores={TearOfKonesihma=1..}] if entity @e[type=item,nbt={Item:{id:"minecraft:ghast_tear",Count:1b,tag:{CustomModelData:18}}}] at @e[type=armor_stand,tag=TearOfKonesihma] if block ~ ~ ~ air run setblock ~ ~ ~ water keep
 execute if entity @a[scores={TearOfKonesihma=1..}] if entity @e[type=item,nbt={Item:{id:"minecraft:ghast_tear",Count:1b,tag:{CustomModelData:18}}}] at @e[type=armor_stand,tag=TearOfKonesihma] if block ~ ~-1 ~ air run setblock ~ ~ ~ barrier keep

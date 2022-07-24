@@ -1,3 +1,5 @@
+#> wmw_after:system/ongame/items/levitation_trap_launcher
+
 execute at @e[type=arrow,nbt={CustomPotionEffects:[{Id:28b,Amplifier:5b}],inGround:true}] run summon armor_stand ~ ~ ~ {Marker:1,Invisible:1,Tags:["WMWAfterstand","Levitation_Trap"]}
 execute as @e[type=arrow,nbt={CustomPotionEffects:[{Id:28b,Amplifier:5b}],inGround:true}] run kill @s
 

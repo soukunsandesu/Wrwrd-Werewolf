@@ -1,3 +1,5 @@
+#> wmw_after:system/ongame/items/hirai
+
 execute as @a[scores={hirai=1..}] run scoreboard players remove @s hirai 1
 execute as @e[type=armor_stand,tag=hirai,nbt={OnGround:true}] run data merge entity @s {Marker:1}
 

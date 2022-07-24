@@ -12,7 +12,7 @@ execute as @e[type=villager,tag=DeadBody] at @e[type=armor_stand,tag=DeadBody] i
 execute as @a[scores={DeathCount=1,CurrentRole=1}] run scoreboard players remove #WMWAfter WolfCount 1
 execute as @a[scores={DeathCount=1,CurrentRole=201..}] run scoreboard players remove #WMWAfter VillageCount 1
 execute if score #WMWAfter WolfCount matches 1.. if score #WMWAfter VillageCount matches 1.. as @a[scores={DeathCount=1},tag=Result] run function wmw_after:system/finish/result
-execute if data storage datapack:wmw_after {} as @a[scores={DeathCount=1}] run function wmw_after:system/ongame/create_deadbody
+execute if data storage datapack:wmw_after {DetectiveEnabled:true} as @a[scores={DeathCount=1}] run function wmw_after:system/ongame/create_deadbody
 execute as @a[scores={DeathCount=1}] run gamemode spectator @s
 execute as @a[scores={DeathCount=1}] run scoreboard players set @s DeathCount 2
 
@@ -27,10 +27,9 @@ function wmw_after:system/ongame/roles/seer
 function wmw_after:system/ongame/roles/medium
 
 # 探偵
-execute if score #DetectiveEnabled wrwrSettings matches 1 run function wmw_after:system/ongame/roles/detective/
+execute if data storage datapack:wmw_after {DetectiveEnabled:true} run function wmw_after:system/ongame/roles/detective/
 
 # 停電
-#function wmw_after:system/ongame/items/blind_book
 function wmw_after:system/ongame/items/blind_sunflower
 
 # 煙玉

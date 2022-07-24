@@ -1,3 +1,5 @@
+#> wmw_after:system/ongame/items/explosion_crossbow
+
 ## 炸裂のクロスボウ
 execute as @e[type=arrow,nbt={CustomPotionEffects:[{Id:30b,Amplifier:60b}]}] at @s[nbt={inGround:true}] run particle poof ~ ~ ~ 2 2 2 0 5000
 execute as @e[type=arrow,nbt={CustomPotionEffects:[{Id:30b,Amplifier:60b}]}] at @s[nbt={inGround:true}] run particle witch ~ ~ ~ 2 2 2 1 100

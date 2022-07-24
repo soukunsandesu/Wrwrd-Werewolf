@@ -1,3 +1,5 @@
+#> wmw_after:system/ongame/limit/all_items/main
+
 kill @e[type=item,nbt={Item:{id:"minecraft:light_gray_stained_glass_pane",tag:{CustomModelData:5}}}]
 execute unless entity @s[nbt={Inventory:[{id:"minecraft:light_gray_stained_glass_pane",Count:1b,tag:{CustomModelData:5},Slot:9b}]}] run function wmw_after:system/ongame/limit/all_items/replace
 execute unless entity @s[nbt={Inventory:[{id:"minecraft:light_gray_stained_glass_pane",Count:1b,tag:{CustomModelData:5},Slot:10b}]}] run function wmw_after:system/ongame/limit/all_items/replace
