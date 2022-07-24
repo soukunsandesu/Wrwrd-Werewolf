@@ -1,53 +1,43 @@
+#> wmw_after:system/preparation/set/roles
+
 #################################################################
-# 役職score number
-# 1  W人狼-赤(red)
-# 2  W狂人-ピンク(light_purple)
-# 3  V預言者-水色(aqua) ※設定でポンコツにもなり得る
-# 4  V霊媒師-黄色(yellow)
-# 5  V村人-緑(green)
+# 役職score number ( 人狼:1~99 || 狂人:100~199 || 村人陣営:200~299 || 第三陣営...?:300~ )
+# 1  W人狼-赤(dark_red)
+# 100  W狂人-紫(dark_purple)
+# 200  V村人-緑(green)
+# 201  V預言者-水色(aqua)
+# 202  V霊媒師-黄色(yellow)
 #################################################################
-# 6  N怪盗-青(blue)
-# 7  V青陰キャ-青(blue)
-# 8  V兄弟(兄)-深緑(dark_green)
-# 9  V兄弟(弟)-深緑(dark_green)
-# 10 Vオオカミ少年-オレンジ(gold)
-# 11 Vイタコ-黄色(yellow)
-# 12 Vカウンセラー-青緑(dark_aqua)
-# 13 Vパン屋(実装予定なし)-オレンジ(gold)
-# 14 V探偵-黄色(yellow)
+# 2 Wボマー-赤(dark_red)
+# 203 Vカウンセラー-青緑(dark_aqua)
+# 204 Vパン屋(実装予定なし)-オレンジ(gold)
+# 205 V探偵-黄色(yellow)
+# 206 N従者-緑(green)
 #################################################################
 # テスト用の役職割り当て
-scoreboard players set @a[tag=Debugger] CurrentRole 14
+scoreboard players set @a[tag=Debugger] CurrentRole 205
 # 通常の役職割り当て
+## 人狼
 scoreboard players set @a[sort=random,limit=2,scores={CurrentRole=0},gamemode=!spectator] CurrentRole 1
 execute if score #WMWAfter PlayerNumber matches 10.. run scoreboard players set @a[sort=random,limit=1,scores={CurrentRole=0},gamemode=!spectator] CurrentRole 1
-scoreboard players set @a[sort=random,limit=1,scores={CurrentRole=0},gamemode=!spectator] CurrentRole 2
-execute if score #Brother wrwrSettings matches 0 run scoreboard players set @a[sort=random,limit=1,scores={CurrentRole=0},gamemode=!spectator] CurrentRole 3
-execute if score #radaokun wrwrSettings matches 0 if score #Itako wrwrSettings matches 0 if score #Detective wrwrSettings matches 0 run scoreboard players set @a[sort=random,limit=1,scores={CurrentRole=0},gamemode=!spectator] CurrentRole 4
-execute if score #Thief wrwrSettings matches 1 run scoreboard players set @a[sort=random,limit=1,scores={CurrentRole=0},gamemode=!spectator] CurrentRole 6
-execute if score #radaokun wrwrSettings matches 1 run scoreboard players set @a[sort=random,limit=1,scores={CurrentRole=0},gamemode=!spectator] CurrentRole 7
-execute if score #Brother wrwrSettings matches 1 run scoreboard players set @a[sort=random,limit=1,scores={CurrentRole=0},gamemode=!spectator] CurrentRole 8
-execute if score #Brother wrwrSettings matches 1 run scoreboard players set @a[sort=random,limit=1,scores={CurrentRole=0},gamemode=!spectator] CurrentRole 9
-execute if score #WolfBoy wrwrSettings matches 1 run scoreboard players set @a[sort=random,limit=1,scores={CurrentRole=0},gamemode=!spectator] CurrentRole 10
-execute if score #Itako wrwrSettings matches 1 run scoreboard players set @a[sort=random,limit=1,scores={CurrentRole=0},gamemode=!spectator] CurrentRole 11
-execute if score #Counselor wrwrSettings matches 1 run scoreboard players set @a[sort=random,limit=1,scores={CurrentRole=0},gamemode=!spectator] CurrentRole 12
-#execute if score #Bakery wrwrSettings matches 1 run scoreboard players set @a[sort=random,limit=1,scores={CurrentRole=0},gamemode=!spectator] CurrentRole 13
-execute if score #Detective wrwrSettings matches 1 run scoreboard players set @a[sort=random,limit=1,scores={CurrentRole=0},gamemode=!spectator] CurrentRole 14
-scoreboard players set @a[scores={CurrentRole=0},gamemode=!spectator] CurrentRole 5
-
-execute if score #Drunk wrwrSettings matches 1 run function wmw_after:system/preparation/random_select
-execute if score #Drunk wrwrSettings matches 1 run scoreboard players set @a[scores={Selected=1},tag=!IgnoreRandSelect] Drunk 1
-execute if score #Haunting wrwrSettings matches 1 run function wmw_after:system/preparation/random_select
-execute if score #Haunting wrwrSettings matches 1 run scoreboard players set @a[scores={Selected=1},tag=!IgnoreRandSelect] Haunting 1
-execute if score #Ponkotu wrwrSettings matches 1 run tag @a[scores={CurrentRole=3}] add WMWAfter_RandomSelect
-execute if score #Ponkotu wrwrSettings matches 1 run function wmw_after:system/preparation/random_select
-execute if score #Ponkotu wrwrSettings matches 1 run scoreboard players set @a[scores={Selected=1,CurrentRole=3},tag=!IgnoreRandSelect] IsPonkotu 1
+## 狂人
+scoreboard players set @a[sort=random,limit=1,scores={CurrentRole=0},gamemode=!spectator] CurrentRole 100
+## 村人陣営
+scoreboard players set @a[sort=random,limit=1,scores={CurrentRole=0},gamemode=!spectator] CurrentRole 201
+execute unless data storage datapack:wmw_after {DetectiveEnabled:true} run scoreboard players set @a[sort=random,limit=1,scores={CurrentRole=0},gamemode=!spectator] CurrentRole 202
+execute if data storage datapack:wmw_after {CounselorEnabled:true} run scoreboard players set @a[sort=random,limit=1,scores={CurrentRole=0},gamemode=!spectator] CurrentRole 203
+#execute if data storage datapack:wmw_after {BakeryEnabled:true} run scoreboard players set @a[sort=random,limit=1,scores={CurrentRole=0},gamemode=!spectator] CurrentRole 204
+execute if data storage datapack:wmw_after {DetectiveEnabled:true} run scoreboard players set @a[sort=random,limit=1,scores={CurrentRole=0},gamemode=!spectator] CurrentRole 205
+## 第三陣営...?
+execute if score #DetectiveEnabled wrwrSettings matches 1 run scoreboard players set @a[sort=random,limit=1,scores={CurrentRole=0},gamemode=!spectator] CurrentRole 205
+## 余り(村人)
+scoreboard players set @a[scores={CurrentRole=0},gamemode=!spectator] CurrentRole 200
 
 execute as @a[scores={CurrentRole=1..}] run scoreboard players operation @s PrevRole = @s CurrentRole
 
 # 各陣営ごとの生存者数
-execute as @a[scores={CurrentRole=1}] run scoreboard players add #WMWAfter WolfCount 1
-execute as @a[scores={CurrentRole=3..}] run scoreboard players add #WMWAfter VillageCount 1
+execute as @a[scores={CurrentRole=1..99}] run scoreboard players add #WMWAfter WolfCount 1
+execute as @a[scores={CurrentRole=200..}] run scoreboard players add #WMWAfter VillageCount 1
 
 #IgnoreRandSelect削除
 tag @a remove IgnoreRandSelect

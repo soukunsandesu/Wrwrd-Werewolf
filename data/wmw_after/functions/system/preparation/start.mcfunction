@@ -1,3 +1,5 @@
+#> wmw_after:system/preparation/start
+
 gamemode adventure @a[gamemode=!spectator]
 title @a reset
 clear @a

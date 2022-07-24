@@ -1,5 +1,5 @@
 # 全体チーム
-team add WMWAfter [{"text":"我々式マイクラ人狼","color":"red","bold":true}]
+team add WMWAfter [{"text":"我々式マイクラ人狼(カウンセラー以降)","color":"red","bold":true}]
 team modify WMWAfter deathMessageVisibility never
 team modify WMWAfter nametagVisibility never
 team modify WMWAfter seeFriendlyInvisibles false

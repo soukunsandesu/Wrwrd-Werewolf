@@ -1,5 +1,8 @@
+#> wmw_after:system/preparation/countdown
+
 scoreboard players remove #WMWAfter CountDown 1
 title @a title ""
+
 execute if score #WMWAfter CountDown matches 600 run title @a subtitle "準備時間 残り30秒"
 execute if score #WMWAfter CountDown matches 580 run title @a subtitle "準備時間 残り29秒"
 execute if score #WMWAfter CountDown matches 560 run title @a subtitle "準備時間 残り28秒"
@@ -30,7 +33,7 @@ execute if score #WMWAfter CountDown matches 80 run title @a subtitle "準備時
 execute if score #WMWAfter CountDown matches 60 run title @a subtitle "準備時間 残り3秒"
 execute if score #WMWAfter CountDown matches 40 run title @a subtitle "準備時間 残り2秒"
 execute if score #WMWAfter CountDown matches 20 run title @a subtitle "準備時間 残り1秒"
-execute if score #WMWAfter CountDown matches 0 run title @a subtitle "準備時間 残り0秒前"
+execute if score #WMWAfter CountDown matches 0 run title @a subtitle "準備時間 残り0秒"
 execute if score #WMWAfter CountDown matches 0 run playsound minecraft:entity.wolf.howl record @a ~ ~ ~ 1 1 1
 execute if score #WMWAfter CountDown matches 0 run function wmw_after:system/ongame/change_to3
 execute if score #WMWAfter CountDown matches 0 run title @a times 10 70 20

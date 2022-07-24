@@ -1,4 +1,4 @@
-scoreboard players set #WMWAfter Phase 2
+data modify storage datapack:wmw_after CurrentPhase set value 2b
 scoreboard players set #WMWAfter CountDown 600
 title @a times 0 20 0
 title @a title ""

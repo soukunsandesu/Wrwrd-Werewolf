@@ -1,3 +1,5 @@
+#> wmw_after:system/preparation/random_generator
+
 ########################################
 ## 1/2確率
 ###実行回数分選出される

@@ -1,6 +1,10 @@
+#> wmw_after:onload
+
+execute unless data storage datapack:wmw_after {OnceLoaded:true} run function wmw_after:system/init/once_load
+execute if entity @a[tag=ForceLoad] run function wmw_after:system/init/once_load
+
 tellraw @a "\n------------------------------------\n"
-tellraw @a [{"translate":"我々式マイクラ人狼(パン屋以降) made by %s","with":[{"text":"Soukun_Palpunte","color":"gold","bold":false}]}]
-tellraw @a [{"translate":"Edit by %s","with":[{"text":"Kuranosuke__","color":"yellow","bold":false}]}]
+tellraw @a {"interpret":true,"nbt":"Credit","storage":"datapack:wmw_after"}
 tellraw @a [{"translate":"\n開始コマンド   %s","with": [{"text":"/function #wmw_after:start","color": "light_purple","clickEvent": {"action": "suggest_command","value": "/function #wmw_after:start"},"hoverEvent": {"action": "show_text","value": "クリックしてチャット欄に貼り付ける"}}]}]
 tellraw @a [{"translate":"\n終了コマンド   %s","with": [{"text":"/function #wmw_after:stop","color": "light_purple","clickEvent": {"action": "suggest_command","value": "/function #wmw_after:stop"},"hoverEvent": {"action": "show_text","value": "クリックしてチャット欄に貼り付ける"}}]}]
 tellraw @a [{"translate":"\n追加役職設定   %s","with": [{"text":"/function #wmw_after:setting","color": "light_purple","clickEvent": {"action": "suggest_command","value": "/function #wmw_after:setting"},"hoverEvent": {"action": "show_text","value": "クリックしてチャット欄に貼り付ける"}}]}]
@@ -8,8 +12,4 @@ tellraw @a "\n------------------------------------\n"
 
 scoreboard objectives add wrwrSettings dummy
 
-execute unless score #ボマー wrwrSettings matches 0..1 run scoreboard players set #ボマー wrwrSettings 0
-execute unless score #パン屋 wrwrSettings matches 0..1 run scoreboard players set #パン屋 wrwrSettings 0
-execute unless score #カウンセラー wrwrSettings matches 0..1 run scoreboard players set #カウンセラー wrwrSettings 0
-execute unless score #従者 wrwrSettings matches 0..1 run scoreboard players set #従者 wrwrSettings 0
-execute unless score #探偵 wrwrSettings matches 0..1 run scoreboard players set #探偵 wrwrSettings 0
+function wmw_after:system/init/on_load
