@@ -1,0 +1,177 @@
+{
+    "type": "generic",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:loot_table",
+            "name": "wmw:item/books/role_book/werewolf",
+            "conditions": [
+              {
+                "condition": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": {
+                  "CurrentRole": 1,
+                  "Drunk": 0
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:loot_table",
+            "name": "wmw:item/books/role_book/madman",
+            "conditions": [
+              {
+                "condition": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": {
+                  "CurrentRole": 2,
+                  "Drunk": 0
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:loot_table",
+            "name": "wmw:item/books/role_book/seer",
+            "conditions": [
+              {
+                "condition": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": {
+                  "CurrentRole": 3,
+                  "Drunk": 0
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:loot_table",
+            "name": "wmw:item/books/role_book/medium",
+            "conditions": [
+              {
+                "condition": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": {
+                  "CurrentRole": 4,
+                  "Drunk": 0
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:loot_table",
+            "name": "wmw:item/books/role_book/villager",
+            "conditions": [
+              {
+                "condition": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": {
+                  "CurrentRole": 5,
+                  "Drunk": 0
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:loot_table",
+            "name": "wmw:item/books/role_book/thief",
+            "conditions": [
+              {
+                "condition": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": {
+                  "CurrentRole": 6,
+                  "Drunk": 0
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:loot_table",
+            "name": "wmw:item/books/radaokun",
+            "conditions": [
+              {
+                "condition": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": {
+                  "CurrentRole": 7,
+                  "Drunk": 0
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:loot_table",
+            "name": "wmw:item/books/brother",
+            "conditions": [
+              {
+                "condition": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": {
+                  "CurrentRole": 8,
+                  "Drunk": 0
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:loot_table",
+            "name": "wmw:item/books/role_book/villager",
+            "conditions": [
+              {
+                "condition": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": {
+                  "CurrentRole": 9,
+                  "Drunk": 0
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:loot_table",
+            "name": "wmw:item/books/role_book/villager",
+            "conditions": [
+              {
+                "condition": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": {
+                  "CurrentRole": 10,
+                  "Drunk": 0
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:loot_table",
+            "name": "wmw:item/books/itako",
+            "conditions": [
+              {
+                "condition": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": {
+                  "CurrentRole": 11,
+                  "Drunk": 0
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:loot_table",
+            "name": "wmw:item/books/drunk",
+            "conditions": [
+              {
+                "condition": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": {
+                  "Drunk": 1
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

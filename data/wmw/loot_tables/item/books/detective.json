@@ -1,0 +1,23 @@
+{
+    "type": "generic",
+    "pools":
+    [
+        {
+            "rolls": 1,
+            "entries":
+            [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:written_book",
+                    "functions":
+                    [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{CustomModelData:5,title:\"役職本\",author:\"\",pages:['[{\"translate\":\"あなたは%sです。\",\"with\":[{\"text\":\"探偵\",\"color\":\"gold\",\"bold\":true}]}]']}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

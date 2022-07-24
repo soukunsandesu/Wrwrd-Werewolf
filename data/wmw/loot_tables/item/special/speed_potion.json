@@ -1,0 +1,32 @@
+{
+    "type": "generic",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:potion",
+            "functions": [
+              {
+                "function": "set_name",
+                "name": [
+                  [
+                    {
+                      "text": "千里馬ポーション",
+                      "italic": true,
+                      "color": "white"
+                    }
+                  ]
+                ]
+              },
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:15,CustomPotionEffects:[{Id:1b,Amplifier:8b,Duration:1200}],CustomPotionColor:8240847}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

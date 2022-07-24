@@ -1,0 +1,29 @@
+kill @e[type=item,nbt={Item:{id:"minecraft:light_gray_stained_glass_pane",tag:{CustomModelData:5}}}]
+clear @s minecraft:light_gray_stained_glass_pane
+loot replace entity @s inventory.0 loot wmw:item/light_gray_staind_glass_pane
+loot replace entity @s inventory.1 loot wmw:item/light_gray_staind_glass_pane
+loot replace entity @s inventory.2 loot wmw:item/light_gray_staind_glass_pane
+loot replace entity @s inventory.3 loot wmw:item/light_gray_staind_glass_pane
+loot replace entity @s inventory.4 loot wmw:item/light_gray_staind_glass_pane
+loot replace entity @s inventory.5 loot wmw:item/light_gray_staind_glass_pane
+loot replace entity @s inventory.6 loot wmw:item/light_gray_staind_glass_pane
+loot replace entity @s inventory.7 loot wmw:item/light_gray_staind_glass_pane
+loot replace entity @s inventory.8 loot wmw:item/light_gray_staind_glass_pane
+loot replace entity @s inventory.9 loot wmw:item/light_gray_staind_glass_pane
+loot replace entity @s inventory.10 loot wmw:item/light_gray_staind_glass_pane
+loot replace entity @s inventory.11 loot wmw:item/light_gray_staind_glass_pane
+loot replace entity @s inventory.12 loot wmw:item/light_gray_staind_glass_pane
+loot replace entity @s inventory.13 loot wmw:item/light_gray_staind_glass_pane
+loot replace entity @s inventory.14 loot wmw:item/light_gray_staind_glass_pane
+loot replace entity @s inventory.15 loot wmw:item/light_gray_staind_glass_pane
+loot replace entity @s inventory.16 loot wmw:item/light_gray_staind_glass_pane
+loot replace entity @s inventory.17 loot wmw:item/light_gray_staind_glass_pane
+loot replace entity @s inventory.18 loot wmw:item/light_gray_staind_glass_pane
+loot replace entity @s inventory.19 loot wmw:item/light_gray_staind_glass_pane
+loot replace entity @s inventory.20 loot wmw:item/light_gray_staind_glass_pane
+loot replace entity @s inventory.21 loot wmw:item/light_gray_staind_glass_pane
+loot replace entity @s inventory.22 loot wmw:item/light_gray_staind_glass_pane
+loot replace entity @s inventory.23 loot wmw:item/light_gray_staind_glass_pane
+loot replace entity @s inventory.24 loot wmw:item/light_gray_staind_glass_pane
+loot replace entity @s inventory.25 loot wmw:item/light_gray_staind_glass_pane
+loot replace entity @s inventory.26 loot wmw:item/light_gray_staind_glass_pane

@@ -1,0 +1,26 @@
+{
+    "type": "generic",
+    "pools":[
+      {
+        "rolls":1,
+        "entries":[
+          {
+            "type":"minecraft:item",
+            "name":"minecraft:shield",
+            "functions":[
+              {
+                "function":"minecraft:set_name",
+                "name": [
+                  [{"text":"機動隊の盾","italic":true}]
+                ]
+              },{
+                "function":"minecraft:set_nbt",
+                "tag":"{Damage:336,CustomModelData:12,Charged:1b,Enchantments:[{id:\"minecraft:knockback\",lvl:10}],Unbreakable:0}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

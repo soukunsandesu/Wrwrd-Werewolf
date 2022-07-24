@@ -1,0 +1,34 @@
+{
+    "type": "generic",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:ghast_tear",
+            "functions": [
+              {
+                "function": "set_name",
+                "name": [
+                  [
+                    {
+                      "text": "コネシマの涙～愛を求めて三千里～",
+                      "italic": true,
+                      "color": "white"
+                    }
+                  ]
+                ]
+              },{
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:18}"
+              },{
+                  "function": "set_count",
+                  "count": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

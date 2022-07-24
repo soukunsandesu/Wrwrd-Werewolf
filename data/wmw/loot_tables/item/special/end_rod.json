@@ -1,0 +1,32 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:end_rod",
+          "functions": [
+            {
+              "function": "set_name",
+              "name": [
+                [
+                  {
+                    "text": "避雷針",
+                    "italic": false,
+                    "color": "white"
+                  }
+                ]
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData:4}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
