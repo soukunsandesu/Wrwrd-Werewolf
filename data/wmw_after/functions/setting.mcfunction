@@ -1,6 +1,6 @@
 gamerule sendCommandFeedback false
 tellraw @s "\n------------------------------------\n"
-tellraw @a [{"text":"※複数導入不可","color":"red"}]
+tellraw @a [{"text":"※複数導入不可","color":"red","underlined": true}]
 
 execute if score #カウンセラー wrwrSettings matches 0 run tellraw @s [{"text":"カウンセラー","clickEvent": {"action": "run_command","value": "/function wmw_after:system/settings/role/enable/doctor"},"hoverEvent": {"action": "show_text","value": "クリックして有効化"},"underlined": true,"color": "gray"}]
 execute if score #カウンセラー wrwrSettings matches 1 run tellraw @s [{"text":"カウンセラー","clickEvent": {"action": "run_command","value": "/function wmw_after:system/settings/role/disable/doctor"},"hoverEvent": {"action": "show_text","value": "クリックして無効化"},"underlined": true,"color": "yellow"}]
