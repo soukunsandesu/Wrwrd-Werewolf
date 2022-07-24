@@ -1,0 +1,36 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lingering_potion",
+          "functions": [
+            {
+              "function": "set_name",
+              "name": [
+                [
+                  {
+                    "text": "煙玉",
+                    "italic": true,
+                    "color": "white"
+                  }
+                ]
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData:13,CustomPotionEffects:[{Id:27,Amplifier:5b,Duration:0,ShowParticles:false,ShowIcon:false}],CustomPotionColor:0,EntityTag:{Duration:300,DurationOnUse:300,Particle:\"minecraft:smoke\"}}"
+            },
+            {
+              "function": "set_count",
+              "count": 3
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
