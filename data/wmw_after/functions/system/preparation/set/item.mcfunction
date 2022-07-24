@@ -16,3 +16,5 @@ execute if data storage datapack:wmw_after {BomberEnabled:true} as @a[scores={ra
 
 execute if data storage datapack:wmw_after {BakeryEnabled:true} as @a[scores={random_item=1..},tag=!GAVE] run loot give @s loot wmw_after:item/detective_special
 execute if data storage datapack:wmw_after {BakeryEnabled:true} as @a[scores={random_item=1..},tag=!GAVE] run tag @s add GAVE
+
+execute as @a[tag=!GAVE] run loot give @s loot wmw_after:item/special

@@ -22,7 +22,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{CustomModelData:13,CustomPotionEffects:[{Id:27,Amplifier:5b,Duration:200}],CustomPotionColor:16777215}"
+              "tag": "{CustomModelData:13,CustomPotionEffects:[{Id:27,Amplifier:5b,Duration:0,ShowParticles:false,ShowIcon:false}],CustomPotionColor:0,EntityTag:{Duration:300,DurationOnUse:300,Particle:\"minecraft:smoke\"}}"
             },
             {
               "function": "set_count",

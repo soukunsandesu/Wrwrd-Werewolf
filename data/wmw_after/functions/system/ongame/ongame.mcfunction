@@ -34,10 +34,7 @@ execute if score #DetectiveEnabled wrwrSettings matches 1 run function wmw_after
 function wmw_after:system/ongame/items/blind_sunflower
 
 # 煙玉
-function wmw_after:system/ongame/items/smoke
-
-# スパイダーランチャー
-function wmw_after:system/ongame/items/spider_launcher
+function wmw_after:system/ongame/items/smoke/
 
 # コネシマの涙
 function wmw_after:system/ongame/items/tear_of_koneshima
